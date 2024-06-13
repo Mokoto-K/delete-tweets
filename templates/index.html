@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block style %}
+      {{ bootstrap.load_css() }}
+      <link rel="stylesheet" href="{{ url_for('static', filename='/css/styles.css') }}" />
+    {% endblock %}
+    <title>Delete Your Tweets</title>
+</head>
+<body>
+
+  <div class="container" id="nav-container">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MokotoK</a>
+        <div class="collapse navbar-collapse">
+          <h1 class="container text-center">Delete Your Tweets</h1>
+          <button class="btn btn-dark mx-1"><a href="https://github.com/Mokoto-K" class="container nav-link px-2 ">Github</a></button>
+          <button class="btn btn-dark mx-1"><a href="https://x.com/MokotoK" class="container nav-link px-2 ">X</a></button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container my-3 px-3" id="outer-container">
+    <section id="main-content" class="main-content">
+      <div class="container d-flex ">
+        <div class="container col-12 col-md-5 py-5">
+          {% from 'bootstrap5/form.html' import render_form %}
+          {{ render_form(form, button_map={"submit": "dark"}) }}
+        </div>
+        <div class="container col-12 col-md-5 py-5 mx-5">
+          <p>
+           A very simple way to delete posts on twitter.
+            <ul>
+              <li>Make sure you have chrome installed</li>
+              <li>Enter your email and password</li>
+              <li>Click Delete</li>
+            </ul>
+            Sit back and watch the magic as the bot systematically opens twitter, signs in, navigates to your profile
+            and begins deleting your tweets.
+
+            Since this requires no verification it can only delete one tweet at a time, so go make a coffee or tea
+            while your computer does the rest.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+
+  <footer>
+    <div class="container d-flex justify-content-center my-1 border-top col-12">
+      <p class="py-2 px-2 mx-2 ">
+        © {{ current_year }} Koto-Kom
+      </p>
+      <p class="py-2 px-2 mx-2  ">
+        BTC: bc1q6tu64eswq0lmjswmnukw23rs3ntw559vx8zj60
+      </p>
+      <p class="py-2 px-2 mx-2 ">
+        ETH & USDT: 0x39144bE322ff97051283789997F0803021D24C79
+      </p>
+
+
+
+      </p>
+
+    </div>
+  </footer>
+
+</html>

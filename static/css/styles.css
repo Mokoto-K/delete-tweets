@@ -1,0 +1,26 @@
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#nav-container {
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    color: #222831;
+}
+
+#outer-container {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    color: #222831;
+}
+
+.main-content {
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    color: #222831;
+}
+
+
+
+

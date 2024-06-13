@@ -1,0 +1,5 @@
+bootstrap-flask
+wtforms
+selenium
+flask
+flask_wtf
